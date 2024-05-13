@@ -8,9 +8,9 @@ This repository serves as the template sharing materials related bootcamps, work
 
 ## Repository Structure
 
-- **docs/**: Contains detailed documentation, additional resources, installation guides, and setup instructions.
+- **docs/**: Contains detailed documentation, additional resources, installation guides, and setup instructions that are not covered in this README.
 - **reference_implementations/**: Reference Implementations are organized by topics. Each topic has its own directory containing codes, notebooks, and a README for guidance.
-- **bootcamp_template/**: Add any installable library components here. It contains replicated codes or class definitions that need not be included directly in the reference implementations.
+- **bootcamp_template/**: Add any installable library components here. It contains replicated codes or class definitions that need not be included directly in the reference implementations. Replace *bootcamp_template* with the name of your library.
 - **data/**: Includes sample datasets or links to datasets used in the bootcamp, along with usage instructions. It also contains the implementation of dataset modules, or anything related to that.
 - **scripts/**: Utility scripts for setup, data processing, submiting jobs, or other repetitive tasks.
 - **pyproject.toml**: The `pyproject.toml` file in this repository configures various build system requirements and dependencies, centralizing project settings in a standardized format.
@@ -26,15 +26,12 @@ Here is the list of the covered topics:
 
 ## Getting Started
 
-To get started with this bootcamp:
-
-1. [Change or modify the following steps based your needs].
-2. Clone this repository to your machine.
-3. Follow the installation and setup instructions [installation and setup instruction file] in the `docs/` directory to prepare your environment.
-4. Begin with each topic in the `reference_implementations/` directory, as guided by the README files.
+To get started with this bootcamp (*Change or modify the following steps based your needs.*):
+1. Clone this repository to your machine.
+2. *Include setup and installation instructions here. For additional documentation, refer to the `docs/` directory.*
+3. Begin with each topic in the `reference_implementations/` directory, as guided by the README files.
 
 ## License
-
 *Add appropriate LICENSE for this bootcamp in the main directory.*
 This project is licensed under the terms of the [LICENSE] file located in the root directory of this repository.
 

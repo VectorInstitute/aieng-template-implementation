@@ -12,7 +12,7 @@ This repository serves as the template sharing materials related bootcamps, work
 - **reference_implementations/**: Reference Implementations are organized by topics. Each topic has its own directory containing codes, notebooks, and a README for guidance.
 - **utils/**: Add any installable library components here. It contains replicated codes or class definitions that need not be included directly in the reference implementations.
 - **data/**: Includes sample datasets or links to datasets used in the bootcamp, along with usage instructions. It also contains the implementation of dataset modules, or anything related to that.
-- **scripts/**: Utility scripts for setup, data processing, submiting jobs, or other repetitive tasks.
+- **scripts/**: Utility scripts for setup, data processing, submitting jobs, or other repetitive tasks.
 - **pyproject.toml**: The `pyproject.toml` file in this repository configures various build system requirements and dependencies, centralizing project settings in a standardized format.
 
 
@@ -37,7 +37,7 @@ This project is licensed under the terms of the [LICENSE] file located in the ro
 
 ## Contribution
 *Add appropriate CONTRIBUTING.md for this bootcamp in the main directory.*
-To get started with contributing to our project, please read our [CONTRIBUTING.md] guide. 
+To get started with contributing to our project, please read our [CONTRIBUTING.md] guide.
 
 ## Contact Information
 

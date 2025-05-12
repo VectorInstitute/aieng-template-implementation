@@ -33,11 +33,11 @@ To get started with this bootcamp (*Change or modify the following steps based y
 
 ## License
 *Add appropriate LICENSE for this bootcamp in the main directory.*
-This project is licensed under the terms of the [LICENSE] file located in the root directory of this repository.
+This project is licensed under the terms of the [LICENSE](LICENSE.md) file located in the root directory of this repository.
 
 ## Contribution
 *Add appropriate CONTRIBUTING.md for this bootcamp in the main directory.*
-To get started with contributing to our project, please read our [CONTRIBUTING.md] guide.
+To get started with contributing to our project, please read our [CONTRIBUTING.md](CONTRIBUTING.md) guide.
 
 ## Contact Information
 

@@ -34,7 +34,7 @@ jobs:
         run: cd aieng-topic-impl && uv sync --dev
 
       - name: Build package
-        run: cd aieng-topic-impl && uv build
+        run: cd aieng-topic-impl && source .venv/bin/activate && uv build
 
       - name: Publish package
         uses: pypa/gh-action-pypi-publish@76f52bc884231f62b9a034ebfe128415bbaabdfc

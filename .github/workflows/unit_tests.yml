@@ -1,0 +1,61 @@
+name: unit tests
+permissions:
+  contents: read
+  pull-requests: write
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - .pre-commit-config.yaml
+      - .github/workflows/code_checks.yml
+      - .github/workflows/docs.yml
+      - .github/workflows/unit_tests.yml
+      - '**.py'
+      - '**.ipynb'
+      - uv.lock
+      - pyproject.toml
+      - '**.rst'
+      - '**.md'
+  pull_request:
+    branches:
+      - main
+    paths:
+      - .pre-commit-config.yaml
+      - .github/workflows/code_checks.yml
+      - .github/workflows/docs.yml
+      - .github/workflows/unit_tests.yml
+      - '**.py'
+      - '**.ipynb'
+      - uv.lock
+      - pyproject.toml
+      - '**.rst'
+      - '**.md'
+
+jobs:
+  unit-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4.2.2
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@c7f87aa956e4c323abf06d5dec078e358f6b4d04
+        with:
+          # Install a specific version of uv.
+          version: "0.7.6"
+          enable-cache: true
+
+      - name: "Set up Python"
+        uses: actions/setup-python@8d9ed9ac5c53483de85588cdf95a591a75ab9f55
+        with:
+          python-version-file: ".python-version"
+
+      - name: Install the project
+        run: cd aieng-topic-impl && uv sync --all-extras --dev
+
+      - name: Install dependencies and check code
+        run: |
+          cd aieng-topic-impl
+          source .venv/bin/activate
+          uv run pytest -m "not integration_test" tests

@@ -1,7 +1,7 @@
-# [Topic Name] Overview
+# [Implementation Name] Overview
 
 ## Introduction
-Welcome to the [Topic Name] module of the [Bootcamp Name]. This folder contains a collection of [choices of Jupyter notebooks, code samples, and resources] designed to enhance your understanding of [specific aspect of the topic]. Here, we will explore [brief description of what will be covered].
+Welcome to the [Implementation Name] of the [Bootcamp/Workshop/Lab/Project Name]. This folder contains a collection of notebooks and a README.md file to enhance your understanding of [specific aspect of the topic]. Here, we will explore [brief description of what will be covered].
 
 ## Prerequisites
 Before you dive into the materials, ensure you have the following prerequisites:
@@ -14,10 +14,10 @@ Here you will find the following Jupyter notebooks:
 1. **[Subtopic 1]** - This notebook covers [brief description].
 2. **[Subtopic 2] Application** - This notebook covers [brief description].
 
-## Code
-This section includes code files that demonstrate:
-- **[Filename 1].py**: [Description of what the script does]
-- **[Filename 2].py**: [Description of what the script does]
+## Package dependencies
+This section describes the packages developed for this specific implementation.
+- **package_a**: [Description of what the package offers and how it is used]
+- **package_b**: [Description of what the package offers and how it is used]
 
 ## Resources
 For further reading and additional studies, consider the following resources:
@@ -26,7 +26,7 @@ For further reading and additional studies, consider the following resources:
 
 ## Getting Started
 To get started with the materials in this topic:
-1. Ensure you have followed the [reference to the installation guide, environment creation, etc.] in `\docs`.
+1. Ensure you have followed the [reference to the installation guide, environment creation, etc.] in `docs/`.
 2. Complete any other steps that are required before moving to the notebooks or code.
 3. Move to notebook [notebook name] to [a brief objective of the notebook].
 4. Run code [code name] with the command [command] to [a brief objective of the code].

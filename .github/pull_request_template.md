@@ -1,5 +1,5 @@
 # PR Type
-[Feature | Fix | Documentation | Other() ]
+[Feature | Fix | Documentation | Other ]
 
 # Short Description
 ...

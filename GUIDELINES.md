@@ -4,7 +4,7 @@ These guidelines are recommended for anyone creating a repository using this tem
 
 ## Repository Name
 
-Choose a repository name that reflects the main topic of your reference implementations. Avoid generic terms like 'workshop', 'bootcamp', 'reference', or 'implementations'. Instead, use a concise topic name that best describes the content. 
+Choose a repository name that reflects the main topic of your reference implementations. Avoid generic terms like 'workshop', 'bootcamp', 'reference', or 'implementations'. Instead, use a concise topic name that best describes the content.
 
 **Example:** Use `retrieval-augmented-generation` if your repository contains reference implementations for RAG concepts. Select a single, descriptive topic name for the project.
 

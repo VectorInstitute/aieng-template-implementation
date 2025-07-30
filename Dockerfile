@@ -16,7 +16,7 @@ RUN apt-get update \
     && rm -rf /var/lib/apt/lists/*
 
 # !!IMPORTANT!!
-# THIS SECTION SHOULD NOT BE MODIFIED AS 
+# THIS SECTION SHOULD NOT BE MODIFIED AS
 # IT IS USED TO MAKE THIS IMAGE COMPATIBLE WITH CODER
 #######################################################################
 ARG USER=coder

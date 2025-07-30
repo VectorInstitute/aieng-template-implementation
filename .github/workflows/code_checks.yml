@@ -43,12 +43,11 @@ jobs:
         with:
           python-version-file: ".python-version"
 
-      - name: Install the project
-        run: uv sync --all-extras --dev
-
       - name: Install dependencies and check code
         run: |
+          uv venv .venv
           source .venv/bin/activate
+          uv sync --all-extras --dev
           pre-commit run --all-files
 
       - name: pip-audit (gh-action-pip-audit)

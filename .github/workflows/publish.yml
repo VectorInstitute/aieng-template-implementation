@@ -30,8 +30,12 @@ jobs:
         with:
           python-version-file: ".python-version"
 
-      - name: Install the project
-        run: cd aieng-topic-impl && uv sync --dev
+      - name: Install dependencies
+        run: |
+          cd aieng-topic-impl
+          uv venv .venv
+          source .venv/bin/activate
+          uv sync --all-extras --dev
 
       - name: Build package
         run: cd aieng-topic-impl && source .venv/bin/activate && uv build

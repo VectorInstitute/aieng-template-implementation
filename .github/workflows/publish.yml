@@ -30,8 +30,12 @@ jobs:
         with:
           python-version-file: ".python-version"
 
-      - name: Install the project
-        run: cd aieng-topic-impl && uv sync --dev
+      - name: Install dependencies
+        run: |
+          cd aieng-topic-impl
+          uv venv .venv
+          source .venv/bin/activate
+          uv sync --all-extras --dev
 
       - name: Build package
         run: cd aieng-topic-impl && source .venv/bin/activate && uv build
@@ -42,10 +46,3 @@ jobs:
           user: __token__
           password: ${{ secrets.PYPI_API_TOKEN }}
           packages-dir: aieng-topic-impl/dist/
-
-      - name: Create GitHub Release
-        id: create_release
-        uses: ncipollo/release-action@440c8c1cb0ed28b9f43e4d1d670870f059653174 # v1.16.0
-        with:
-          artifacts: "aieng-topic-impl/dist/*"
-          generateReleaseNotes: true

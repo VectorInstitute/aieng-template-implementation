@@ -51,11 +51,10 @@ jobs:
         with:
           python-version-file: ".python-version"
 
-      - name: Install the project
-        run: cd aieng-topic-impl && uv sync --all-extras --dev
-
       - name: Install dependencies and check code
         run: |
           cd aieng-topic-impl
+          uv venv .venv
           source .venv/bin/activate
+          uv sync --all-extras --dev
           uv run pytest -m "not integration_test" tests

@@ -19,4 +19,4 @@ echo "Jupyter kernel installed."
 
 # Start Jupyter lab
 echo "Starting Jupyter lab..."
-uv run jupyter lab --no-browser --port=8888 --ip=0.0.0.0
+uv run jupyter lab --no-browser --port=8888 --ip=0.0.0.0 --ServerApp.token=''

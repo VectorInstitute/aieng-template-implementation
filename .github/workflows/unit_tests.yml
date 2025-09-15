@@ -37,25 +37,24 @@ jobs:
   unit-tests:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4.2.2
+      - uses: actions/checkout@v5.0.0
 
       - name: Install uv
-        uses: astral-sh/setup-uv@c7f87aa956e4c323abf06d5dec078e358f6b4d04
+        uses: astral-sh/setup-uv@b75a909f75acd358c2196fb9a5f1299a9a8868a4
         with:
           # Install a specific version of uv.
           version: "0.7.6"
           enable-cache: true
 
       - name: "Set up Python"
-        uses: actions/setup-python@8d9ed9ac5c53483de85588cdf95a591a75ab9f55
+        uses: actions/setup-python@e797f83bcb11b83ae66e0230d6156d7c80228e7c
         with:
           python-version-file: ".python-version"
-
-      - name: Install the project
-        run: cd aieng-topic-impl && uv sync --all-extras --dev
 
       - name: Install dependencies and check code
         run: |
           cd aieng-topic-impl
+          uv venv .venv
           source .venv/bin/activate
+          uv sync --all-extras --dev
           uv run pytest -m "not integration_test" tests

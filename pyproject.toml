@@ -10,6 +10,7 @@ dependencies = [
     "aieng-topic-impl",
     "jupyterlab>=4.4.8",
     "pip>=25.3",
+    "urllib3>=2.6.0",
 ]
 
 [dependency-groups]

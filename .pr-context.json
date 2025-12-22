@@ -1,0 +1,12 @@
+{
+  "repo": "VectorInstitute/aieng-template-implementation",
+  "pr_number": 34,
+  "pr_title": "Bump pip-audit from 2.9.0 to 2.10.0",
+  "pr_author": "app/dependabot",
+  "pr_url": "https://github.com/VectorInstitute/aieng-template-implementation/pull/34",
+  "failure_type": "merge_conflict",
+  "failed_checks": [
+    "merge-conflict"
+  ],
+  "failure_logs_file": ".failure-logs.txt"
+}

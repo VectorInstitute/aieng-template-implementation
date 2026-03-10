@@ -12,7 +12,7 @@ dependencies = [
     "jupyterlab>=4.4.8",
     "pip>=25.3",
     "urllib3>=2.6.0",
-    "virtualenv==21.1.0",
+    "virtualenv==21.2.0",
 ]
 
 [dependency-groups]

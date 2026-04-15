@@ -8,7 +8,7 @@ repository = "https://github.com/VectorInstitute/aieng-template-implementation"
 requires-python = ">=3.12"
 dependencies = [
     "aieng-topic-impl",
-    "filelock==3.25.2",
+    "filelock==3.28.0",
     "jupyterlab>=4.4.8",
     "nbconvert>=7.17.0",
     "pip>=25.3",

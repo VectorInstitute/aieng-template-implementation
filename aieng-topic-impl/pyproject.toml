@@ -18,7 +18,7 @@ dev = [
 
 [project]
 name = "aieng-topic-impl"
-version = "0.1.0"
+version = "0.1.1"
 description = "AI Engineering example implementation"
 authors = [{name = "Vector AI Engineering", email = "ai_engineering@vectorinstitute.ai"}]
 requires-python = ">=3.11,<4.0"

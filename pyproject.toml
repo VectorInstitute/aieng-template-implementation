@@ -9,7 +9,7 @@ requires-python = ">=3.12"
 dependencies = [
     "aieng-topic-impl",
     "filelock==3.29.0",
-    "jupyterlab>=4.4.8",
+    "jupyterlab>=4.5.7",
     "nbconvert>=7.17.0",
     "pip>=26.1",
     "pygments>=2.20.0",

@@ -17,6 +17,7 @@ dependencies = [
     "pip>=26.1.2",
     "pygments>=2.20.0",
     "requests>=2.34.2",
+    "tornado>=6.5.7",
     "urllib3>=2.7.0",
     "virtualenv==21.4.3",
 ]

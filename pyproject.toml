@@ -10,7 +10,7 @@ dependencies = [
     "aieng-topic-impl",
     "filelock==3.29.4",
     "idna>=3.18",
-    "jupyter-server>=2.19.0",
+    "jupyter-server>=2.20.0",
     "jupyterlab>=4.5.8",
     "mistune>=3.2.0",
     "nbconvert>=7.17.0",

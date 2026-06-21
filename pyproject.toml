@@ -12,6 +12,7 @@ dependencies = [
     "idna>=3.18",
     "jupyter-server>=2.20.0",
     "jupyterlab>=4.5.9",
+    "msgpack>=1.2.1",
     "mistune>=3.2.0",
     "nbconvert>=7.17.0",
     "pip>=26.1.2",
@@ -29,11 +30,11 @@ dev = [
     "nbqa>=1.9.1",
     "pip-audit>=2.10.1",
     "pre-commit>=4.6.0",
-    "pytest>=9.1.0",
+    "pytest>=9.1.1",
     "pytest-asyncio>=1.4.0",
     "pytest-cov>=6.0.0",
     "pytest-mock>=3.14.0",
-    "ruff>=0.15.17",
+    "ruff>=0.15.18",
 ]
 
 [tool.uv.workspace]

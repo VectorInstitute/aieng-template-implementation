@@ -19,7 +19,7 @@ dependencies = [
     "requests>=2.34.2",
     "tornado>=6.5.8",
     "urllib3>=2.7.0",
-    "virtualenv==21.7.3",
+    "virtualenv==21.7.4",
 ]
 
 [dependency-groups]
